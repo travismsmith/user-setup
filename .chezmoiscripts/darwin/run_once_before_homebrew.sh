@@ -1,3 +1,4 @@
+#!/bin/sh
 xcode-select --install || echo "XCode already installed"
 
 # Install Homebrew if necessary
