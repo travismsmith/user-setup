@@ -9,3 +9,4 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot travismsmith/user-setup
 ## Wget
 ```bash
 sh -c "$(wget -qO- get.chezmoi.io)" -- init --one-shot travismsmith/user-setup
+```
