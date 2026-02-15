@@ -2,6 +2,8 @@ packages:
   darwin:
     brews:
     - 'chezmoi'
+    - 'gh'
+    - 'git'
     - 'mas'
     casks:
     - '1password'
