@@ -1,6 +1,6 @@
 #!/bin/sh
 
-xcode-select --install || echo "XCode already installed"
+xcode-select --install > /dev/null 2>&1 || echo "XCode already installed"
 
 # Install Homebrew if necessary
 if command -v brew &>/dev/null; then
