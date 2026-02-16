@@ -9,10 +9,10 @@ To run the bootstrap, you can use either `curl` or `wget` to download and execut
 
 ### Curl
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot travismsmith/user-setup
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot --use-builtin-git true travismsmith/user-setup
 ```
 
 ### Wget
 ```bash
-sh -c "$(wget -qO- get.chezmoi.io)" -- init --one-shot travismsmith/user-setup
+sh -c "$(wget -qO- get.chezmoi.io)" -- init --one-shot --use-builtin-git true travismsmith/user-setup
 ```
