@@ -4,12 +4,15 @@ This repository contains the configuration needed to bootstrap a new system to u
 This configuration assumes a specfic setup for each OS:
 - MacOS: Homebrew for package management, 1Password for password management, and GitHub CLI for interacting with GitHub.
 
-## Curl
+## Running the bootstrap
+To run the bootstrap, you can use either `curl` or `wget` to download and execute the chezmoi installation script, passing the `--one-shot` flag to initialize the new system with the configuration from this repository.
+
+### Curl
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot travismsmith/user-setup
 ```
 
-## Wget
+### Wget
 ```bash
 sh -c "$(wget -qO- get.chezmoi.io)" -- init --one-shot travismsmith/user-setup
 ```
